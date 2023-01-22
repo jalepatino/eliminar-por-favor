@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno{
+    padding: 0 50px;
+}
+
+
+.header{
+    background: url(../imagenes/gato2460x1440.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: rgba(0 0 0 0.4); 
+        height: 60px;      
+        display:flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        border-bottom: rgba(255, 255, 255, 0.5);
+    }
+        .logo{
+            
+            flex: 1 1 auto;
+            
+        }
+
+            .logo a{
+                color: #fff;
+                font-size: 26px;
+                
+            }
+            .logo a:hover{
+                color: rgb(0, 238, 255);
+            }
+        .nav{
+            
+            flex: 5 1 auto;
+           
+        }
+            .nav a{
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+
+                
+            }
+            .nav a:hover{
+                color: rgb(0, 238, 255);
+            }
+        .social{
+            
+            flex: 1 1 auto;
+            display:flex;
+        }
+            .social a{
+                color: #fff;
+                
+               
+            }
+            .social a:hover{
+                color: rgb(0, 238, 255);
+
+            }
+
+    .texto-principal{
+        /* background: #EA7A36; */
+        height: 580px;
+        display: flex;
+        align-items: center;
+    }
+        h1{
+            /* background: #E9BE51; */
+            font-size: 17px;
+            font-family: 'Lora', serif;
+            color: #fff;
+            font-weight: 300px;
+            text-align: center;
+            line-height: 1.6;
+
+        }
+
+.section{
+    background: #000;
+    display: flex;
+}
+    .articulos{
+        background: #000;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+        width: 165%;
+    }
+        .article{
+            /* background: #1768B4; */
+            flex: 1 1 40%;
+            color: #444;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0 0;
+            background: #324F61;
+            
+
+
+        }
+        .article img{
+            width: 100%;
+        }
+        .article a{
+
+            color:aqua;
+            font-size:13px;
+            padding: 10px;
+            background: #000;
+            margin: 10px 0px;
+            display: inline-block;
+        }
+        .article a:hover{
+            background: aqua;
+            color:#000;
+
+        }
+        h3{
+            color: #fff;
+            font-size: 13px;
+            margin-top: -80px;
+            padding: 10px 15px;
+
+        }
+        h2{
+            color:#fff;
+            text-transform: uppercase;
+            padding: 0 0 10px 10px;
+
+        }
+        p{
+            color: white;
+        }
+        .navegacion{
+            background: #324F61;
+            flex: 1 1 100%;
+            margin:10px 10px 10px 0;
+            
+
+        }
+
+        .navegacion a{
+            color: aqua;
+        }
+
+    .aside{
+        /* background: #7EB25F; */
+        flex: 2 1 auto;
+       display:flex;
+       flex-direction: column;
+       margin: 10px 5px 10px 0;
+       align-items: center;
+       
+    }
+
+    .aside img{
+        width: 100%;
+    }
+
+    h4{
+        color: #fff;
+        background: #000;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+
+    
+   
+        .publicidad{
+            background: #C9C6C6;
+        }
+        
+
+
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+    .pie{
+        background: #B6861E;
+        width: 30%;
+    }
+
+@media(max-width:948px){
+
+    .menu{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .section{
+        display:flex;
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 15px;;
+    }
+
+
+
+
+}
+
+@media(max-width:600px){
+
+
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:400px){
+    .aside{
+        flex-direction: column;
+    }
+}
